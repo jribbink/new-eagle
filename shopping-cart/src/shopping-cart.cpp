@@ -14,8 +14,24 @@
 #include <gtkmm/window.h>
 #include <gdkmm/screen.h>
 
+#include <iostream>
+
 #define screen_width	400
 #define screen_height	300
+
+Glib::RefPtr<Gtk::Builder> builder;
+
+void on_button_clicked()
+{
+	std::cout << "The Button was clicked." << std::endl;
+
+	Gtk::Window *win;
+	builder->get_widget("mainwindow", win);
+	win->show_all();
+
+
+
+}
 
 int main (int argc, char *argv[])
 {
@@ -23,7 +39,7 @@ int main (int argc, char *argv[])
 	Gtk::Main kit(argc, argv);
 
 	//Load design from file
-	Glib::RefPtr<Gtk::Builder> builder = Gtk::Builder::create();
+	builder = Gtk::Builder::create();
 	builder->add_from_file("main.glade");
 	builder->add_from_file("idle.glade");
 
@@ -41,6 +57,11 @@ int main (int argc, char *argv[])
 	  win->fullscreen();
 	else
 	  win->property_resizable() = false;
+
+	//Setup for click event
+	Gtk::Button *btn;
+	builder->get_widget("start", btn);
+	btn->signal_clicked().connect( &on_button_clicked );
 
 	//Main application method, show window
 	Gtk::Main::run(*win);
