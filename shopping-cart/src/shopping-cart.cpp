@@ -19,21 +19,31 @@
 
 int main (int argc, char *argv[])
 {
-	  Gtk::Main kit(argc, argv);
+	//Initialize gtkmm
+	Gtk::Main kit(argc, argv);
 
-	  Glib::RefPtr<Gtk::Builder> builder = Gtk::Builder::create_from_file("main.glade");
+	//Load design from file
+	Glib::RefPtr<Gtk::Builder> builder = Gtk::Builder::create();
+	builder->add_from_file("main.glade");
+	builder->add_from_file("idle.glade");
 
-	  Gtk::Window *win;
-	  builder->get_widget("winobj", win);
+	//Get window object from builder
+	Gtk::Window *win;
+	builder->get_widget("idlewindow", win);
 
-	  Glib::RefPtr<Gdk::Screen> screen = Gdk::Screen::get_default();
-	  int width = screen->get_width();
-	  int height = screen->get_height();
+	//Get screen size
+	Glib::RefPtr<Gdk::Screen> screen = Gdk::Screen::get_default();
+	int width = screen->get_width();
+	int height = screen->get_height();
 
-	  if(width < screen_width && height < screen_height)
-		  win->fullscreen();
+	//Fullscreen if small enough, otherwise disable resize
+	if(width < screen_width && height < screen_height)
+	  win->fullscreen();
+	else
+	  win->property_resizable() = false;
 
-	  Gtk::Main::run(*win);
+	//Main application method, show window
+	Gtk::Main::run(*win);
 
-  return 0;
+	return 0;
 }
