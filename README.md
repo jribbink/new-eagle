@@ -2,3 +2,4 @@
 
 ## Dependencies
 **Requires gtkmm (UI)
+libmysqlcppconn-dev
