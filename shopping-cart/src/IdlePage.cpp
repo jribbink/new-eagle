@@ -19,11 +19,9 @@ IdlePage::IdlePage()
 
 void IdlePage::on_button_clicked()
 {
-	std::cout << "The Button was clicked." << std::endl;
-
 	MainPage* main = new MainPage();
-	((MainWindow*)this->get_toplevel())->stack->append_page(*main, "main");
-	((MainWindow*)this->get_toplevel())->stack->show_all();
+	((MainWindow*)this->get_toplevel())->notebook->append_page(*main, "main");
+	((MainWindow*)this->get_toplevel())->notebook->show_all();
 
 	//((MainWindow*)this->get_toplevel())->stack->show_all();
 	//this->get_toplevel()->show_all_children();

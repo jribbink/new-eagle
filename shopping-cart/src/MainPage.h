@@ -14,7 +14,7 @@
 #ifndef MAINPAGE_H_
 #define MAINPAGE_H_
 
-class MainPage : public Page {
+class MainPage : public NESC::Page {
 public:
 	MainPage();
 	virtual ~MainPage();

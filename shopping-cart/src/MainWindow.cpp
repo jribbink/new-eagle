@@ -6,6 +6,7 @@
  */
 
 #include "MainWindow.h"
+#include <iostream>
 
 MainWindow::MainWindow() {
 	//Get screen size
@@ -13,29 +14,28 @@ MainWindow::MainWindow() {
 	int width = screen->get_width();
 	int height = screen->get_height();
 
+	//Init notebook
+	notebook = new Gtk::Notebook();
+
 	//Fullscreen if small enough, otherwise disable resize
-	if(width < screen_width && height < screen_height)
+	if(width <= screen_width && height <= screen_height)
 	{
 	  fullscreen();
 	}
 	else
 	{
 	  property_resizable() = false;
-	  set_default_size(screen_width, screen_height);
+	  notebook->set_size_request(screen_width, screen_height);
 	}
 
-	stack = new Gtk::Notebook();
+	//Add idle page to notebook
 	IdlePage *idlepage = new IdlePage();
-	stack->append_page(*idlepage, "idle");
+	notebook->append_page(*idlepage, "idle");
 
-	/*MainPage* main = new MainPage();
-	stack->append_page(*main, "main");*/
+	//Add notebook to MainWindow Object
+	add(*notebook);
 
-	/*MainPage* main = new MainPage();
-	box->pack_start(*main);
-	box->remove(*idlepage);*/
-
-	add(*stack);
+	//Show all MainWindow children (notebook)
 	show_all_children();
 }
 

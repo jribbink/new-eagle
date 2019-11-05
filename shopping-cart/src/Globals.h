@@ -8,8 +8,8 @@
 #ifndef GLOBALS_H_
 #define GLOBALS_H_
 
-#define screen_width	400
-#define screen_height	300
+#define screen_width	720
+#define screen_height	480
 
 namespace Globals
 {

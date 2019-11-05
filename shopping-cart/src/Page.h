@@ -17,13 +17,17 @@
 
 #include <stdio.h>
 
-class Page : public Gtk::Bin {
-public:
-	Page();
-	virtual ~Page();
-protected:
-	Glib::RefPtr<Gtk::Builder> builder;
-	void ImportGlade(Glib::ustring glade);
+namespace NESC
+{
+	class Page : public Gtk::Bin
+	{
+	public:
+		Page();
+		virtual ~Page();
+	protected:
+		Glib::RefPtr<Gtk::Builder> builder;
+		void ImportGlade(Glib::ustring glade);
+	};
 };
 
 #endif /* PAGE_H_ */

@@ -18,7 +18,7 @@
 
 class MainWindow : public Gtk::Window {
 public:
-	Gtk::Notebook* stack;
+	Gtk::Notebook* notebook;
 	MainWindow();
 	virtual ~MainWindow();
 };

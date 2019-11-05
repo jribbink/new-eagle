@@ -21,7 +21,7 @@
 
 #include <iostream>
 
-class IdlePage : public Page {
+class IdlePage : public NESC::Page {
 public:
 	IdlePage();
 	virtual ~IdlePage();
