@@ -1,5 +1,5 @@
 # new-eagle
 
 ## Dependencies
-**Requires gtkmm (UI)
-libmysqlcppconn-dev
+**Requires gtkmm (UI)<br />
+**Requires libmysqlcppconn-dev
