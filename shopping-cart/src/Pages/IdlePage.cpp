@@ -7,27 +7,28 @@
 
 #include "IdlePage.h"
 
-IdlePage::IdlePage()
+namespace NESC::Pages
 {
-	ImportGlade("idle");
+	IdlePage::IdlePage()
+	{
+		ImportGlade("idle");
 
-	//Setup for click event
-	Gtk::Button *btn;
-	builder->get_widget("start", btn);
-	btn->signal_clicked().connect( sigc::mem_fun(*this, &IdlePage::on_button_clicked) );
+		//Setup for click event
+		Gtk::Button *btn;
+		builder->get_widget("start", btn);
+		btn->signal_clicked().connect( sigc::mem_fun(*this, &IdlePage::on_button_clicked) );
+	}
+
+	void IdlePage::on_button_clicked()
+	{
+		MainPage* main = new MainPage();
+		Gtk::Notebook* notebook = ((MainWindow*)this->get_toplevel())->notebook;
+		notebook->append_page(*main, "main");
+		notebook->show_all();
+		notebook->set_current_page(1);
+	}
+
+	IdlePage::~IdlePage() {
+		// TODO Auto-generated destructor stub
+	}
 }
-
-void IdlePage::on_button_clicked()
-{
-	MainPage* main = new MainPage();
-	((MainWindow*)this->get_toplevel())->notebook->append_page(*main, "main");
-	((MainWindow*)this->get_toplevel())->notebook->show_all();
-
-	//((MainWindow*)this->get_toplevel())->stack->show_all();
-	//this->get_toplevel()->show_all_children();
-}
-
-IdlePage::~IdlePage() {
-	// TODO Auto-generated destructor stub
-}
-

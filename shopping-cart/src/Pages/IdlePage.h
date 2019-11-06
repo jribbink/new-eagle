@@ -9,7 +9,7 @@
 #define IDLEPAGE_H_
 
 #include "MainPage.h"
-#include "MainWindow.h"
+#include "../MainWindow.h"
 #include "Page.h"
 
 #include <gtkmm/button.h>
@@ -21,12 +21,15 @@
 
 #include <iostream>
 
-class IdlePage : public NESC::Page {
-public:
-	IdlePage();
-	virtual ~IdlePage();
-private:
-	void on_button_clicked();
-};
+namespace NESC::Pages
+{
+	class IdlePage : public NESC::Page{
+	public:
+		IdlePage();
+		virtual ~IdlePage();
+	private:
+		void on_button_clicked();
+	};
+}
 
 #endif /* IDLEPAGE_H_ */

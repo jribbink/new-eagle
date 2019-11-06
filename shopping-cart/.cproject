@@ -139,7 +139,11 @@
                     					
                     <sourceEntries>
                         						
-                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+                        <entry excluding="Util|Pages" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+                        						
+                        <entry excluding="Util" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/Pages"/>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/Util"/>
                         					
                     </sourceEntries>
                     				

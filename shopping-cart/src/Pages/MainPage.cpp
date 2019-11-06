@@ -7,11 +7,13 @@
 
 #include "MainPage.h"
 
-MainPage::MainPage() {
-	ImportGlade("main");
-}
+namespace NESC::Pages
+{
+	MainPage::MainPage() {
+		ImportGlade("main");
+	}
 
-MainPage::~MainPage() {
-	// TODO Auto-generated destructor stub
+	MainPage::~MainPage() {
+		// TODO Auto-generated destructor stub
+	}
 }
-

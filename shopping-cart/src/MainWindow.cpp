@@ -29,7 +29,7 @@ MainWindow::MainWindow() {
 	}
 
 	//Add idle page to notebook
-	IdlePage *idlepage = new IdlePage();
+	NESC::Pages::IdlePage *idlepage = new NESC::Pages::IdlePage();
 	notebook->append_page(*idlepage, "idle");
 
 	//Add notebook to MainWindow Object

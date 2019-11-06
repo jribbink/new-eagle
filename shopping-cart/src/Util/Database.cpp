@@ -1,11 +1,11 @@
 /*
- * Inventory.cpp
+ * Database.cpp
  *
  *  Created on: Nov. 5, 2019
  *      Author: jordan
  */
 
-#include "Inventory.h"
+#include "Database.h"
 
 #include <iostream>
 
@@ -13,11 +13,11 @@ using namespace std;
 
 namespace NESC {
 
-Inventory::Inventory() {
+Database::Database() {
 	try {
 	  /* Create a connection */
 	  driver = get_driver_instance();
-	  con = driver->connect("tcp://107.174.139.249:3306", "neweagle", "neweagle");
+	  con = driver->connect("tcp://neweaglepos.com:3306", "neweagle", "neweagle");
 	  /* Connect to the MySQL test database */
 	  con->setSchema("neweagle_db");
 
@@ -47,7 +47,7 @@ Inventory::Inventory() {
 	cout << endl;
 }
 
-Inventory::~Inventory() {
+Database::~Database() {
 	// TODO Auto-generated destructor stub
 }
 

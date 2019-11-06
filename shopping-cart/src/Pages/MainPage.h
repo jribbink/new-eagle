@@ -14,10 +14,13 @@
 #ifndef MAINPAGE_H_
 #define MAINPAGE_H_
 
-class MainPage : public NESC::Page {
-public:
-	MainPage();
-	virtual ~MainPage();
-};
+namespace NESC::Pages
+{
+	class MainPage : public NESC::Page {
+	public:
+		MainPage();
+		virtual ~MainPage();
+	};
+}
 
 #endif /* MAINPAGE_H_ */

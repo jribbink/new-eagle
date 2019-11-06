@@ -13,8 +13,8 @@
 #include <gdkmm/screen.h>
 #include <gtkmm/notebook.h>
 
-#include "Globals.h"
-#include "IdlePage.h"
+#include "Util/Globals.h"
+#include "Pages/IdlePage.h"
 
 class MainWindow : public Gtk::Window {
 public:

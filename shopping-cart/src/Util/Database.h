@@ -1,12 +1,12 @@
 /*
- * Inventory.h
+ * Database.h
  *
  *  Created on: Nov. 5, 2019
  *      Author: jordan
  */
 
-#ifndef INVENTORY_H_
-#define INVENTORY_H_
+#ifndef DATABASE_H_
+#define DATABASE_H_
 
 #include "mysql_connection.h"
 
@@ -17,17 +17,17 @@
 
 namespace NESC {
 
-class Inventory {
+class Database {
 private:
 	sql::Driver *driver;
 	sql::Connection *con;
 	sql::Statement *stmt;
 	sql::ResultSet *res;
 public:
-	Inventory();
-	virtual ~Inventory();
+	Database();
+	virtual ~Database();
 };
 
 } /* namespace NESC */
 
-#endif /* INVENTORY_H_ */
+#endif /* DATABASE_H_ */
