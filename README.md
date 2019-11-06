@@ -4,7 +4,7 @@
 **Requires gtkmm (UI)  
 **Requires libmysqlcppconn-dev  
 
-## Login credentials for related services:
+## Login credentials:
 ### 1&1 Domain
 Customer ID: 642524266  
 Password: NewEagle19!  
