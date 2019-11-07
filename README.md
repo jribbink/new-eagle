@@ -14,9 +14,9 @@ User: neweagle
 Pass: neweagle  
 Database: neweagle_db  
 ### Website admin
-Host: https://neweaglepos.com:2031
-User: root
-Pass: neweagle
+Host: https://neweaglepos.com:2031  
+User: root  
+Pass: neweagle  
 ### Centos WHP
-User: admin@neweaglepos.com
-Pass: butterfly44
+User: admin@neweaglepos.com  
+Pass: butterfly44  
