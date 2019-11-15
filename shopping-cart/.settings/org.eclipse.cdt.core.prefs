@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.gnu.exe.release.1812027959.918524032/PATH/delimiter=\:
+environment/project/cdt.managedbuild.config.gnu.exe.release.1812027959.918524032/PATH/operation=replace
+environment/project/cdt.managedbuild.config.gnu.exe.release.1812027959.918524032/PATH/value=/bin\:/home/jordan/.local/bin\:/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/usr/games\:/usr/local/games\:/snap/bin\:/home/jordan/esp/xtensa-esp32-elf/bin\:/opt/cross-pi-gcc/bin
+environment/project/cdt.managedbuild.config.gnu.exe.release.1812027959.918524032/append=true
+environment/project/cdt.managedbuild.config.gnu.exe.release.1812027959.918524032/appendContributed=true

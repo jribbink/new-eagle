@@ -5,7 +5,7 @@
         		
         <cconfiguration id="cdt.managedbuild.config.gnu.exe.release.1812027959">
             			
-            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.exe.release.1812027959" moduleId="org.eclipse.cdt.core.settings" name="Release">
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.exe.release.1812027959" moduleId="org.eclipse.cdt.core.settings" name="x86">
                 				
                 <externalSettings/>
                 				
@@ -29,95 +29,43 @@
             			
             <storageModule moduleId="cdtBuildSystem" version="4.0.0">
                 				
-                <configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser" id="cdt.managedbuild.config.gnu.exe.release.1812027959" name="Release" optionalBuildProperties="org.eclipse.cdt.docker.launcher.containerbuild.property.enablement=null,org.eclipse.cdt.docker.launcher.containerbuild.property.selectedvolumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.volumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.image=null,org.eclipse.cdt.docker.launcher.containerbuild.property.connection=null" parent="cdt.managedbuild.config.gnu.exe.release">
+                <configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser" id="cdt.managedbuild.config.gnu.exe.release.1812027959" name="x86" optionalBuildProperties="org.eclipse.cdt.docker.launcher.containerbuild.property.enablement=null,org.eclipse.cdt.docker.launcher.containerbuild.property.selectedvolumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.volumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.image=null,org.eclipse.cdt.docker.launcher.containerbuild.property.connection=null" parent="cdt.managedbuild.config.gnu.exe.release">
                     					
                     <folderInfo id="cdt.managedbuild.config.gnu.exe.release.1812027959." name="/" resourcePath="">
                         						
-                        <toolChain id="cdt.managedbuild.toolchain.gnu.exe.release.572114201" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.exe.release">
+                        <toolChain id="cdt.managedbuild.toolchain.gnu.base.210724890" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
                             							
-                            <targetPlatform binaryParser="org.eclipse.cdt.core.GNU_ELF" id="cdt.managedbuild.target.gnu.platform.exe.release.1590818035" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.exe.release"/>
+                            <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.GNU_ELF" id="cdt.managedbuild.target.gnu.platform.base.1167638762" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
                             							
-                            <builder buildPath="${workspace_loc:/shopping-cart}/Release" id="cdt.managedbuild.target.gnu.builder.exe.release.1684832931" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.exe.release"/>
+                            <builder buildPath="${workspace_loc:/shopping-cart}/x86" id="cdt.managedbuild.target.gnu.builder.base.71475134" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.base"/>
                             							
-                            <tool id="cdt.managedbuild.tool.gnu.archiver.base.699179659" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+                            <tool id="cdt.managedbuild.tool.gnu.archiver.base.125735748" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
                             							
-                            <tool commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS} `pkg-config --cflags gtkmm-3.0`" id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.2037960864" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release">
+                            <tool commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS} `pkg-config --cflags gtkmm-3.0`" id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1671519194" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
                                 								
-                                <option id="gnu.cpp.compiler.exe.release.option.optimization.level.1889364423" name="Optimization Level" superClass="gnu.cpp.compiler.exe.release.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+                                <option id="gnu.cpp.compiler.option.optimization.level.1160907519" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
                                 								
-                                <option defaultValue="gnu.cpp.compiler.debugging.level.none" id="gnu.cpp.compiler.exe.release.option.debugging.level.898193505" name="Debug Level" superClass="gnu.cpp.compiler.exe.release.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+                                <option defaultValue="gnu.cpp.compiler.debugging.level.none" id="gnu.cpp.compiler.option.debugging.level.985313946" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
                                 								
-                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="gnu.cpp.compiler.option.include.paths.428117734" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath"/>
-                                								
-                                <option id="gnu.cpp.compiler.option.other.verbose.793142442" name="Verbose (-v)" superClass="gnu.cpp.compiler.option.other.verbose" useByScannerDiscovery="false" value="false" valueType="boolean"/>
-                                								
-                                <option id="gnu.cpp.compiler.option.other.other.1475832374" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -fmessage-length=0" valueType="string"/>
-                                								
-                                <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.438253139" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.328290318" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                                 							
                             </tool>
                             							
-                            <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.1402863673" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release">
+                            <tool id="cdt.managedbuild.tool.gnu.c.compiler.base.1244614691" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
                                 								
-                                <option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.exe.release.option.optimization.level.280414970" name="Optimization Level" superClass="gnu.c.compiler.exe.release.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+                                <option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.option.optimization.level.881849121" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
                                 								
-                                <option defaultValue="gnu.c.debugging.level.none" id="gnu.c.compiler.exe.release.option.debugging.level.2096941907" name="Debug Level" superClass="gnu.c.compiler.exe.release.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+                                <option defaultValue="gnu.c.debugging.level.none" id="gnu.c.compiler.option.debugging.level.1588580368" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
                                 								
-                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="gnu.c.compiler.option.include.paths.684193525" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath"/>
-                                								
-                                <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1683119722" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                                <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.606837651" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
                                 							
                             </tool>
                             							
-                            <tool id="cdt.managedbuild.tool.gnu.c.linker.exe.release.1704568826" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.release"/>
+                            <tool id="cdt.managedbuild.tool.gnu.c.linker.base.82502693" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
                             							
-                            <tool commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS} `pkg-config --libs gtkmm-3.0` -lmysqlcppconn" id="cdt.managedbuild.tool.gnu.cpp.linker.exe.release.195644765" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.release">
+                            <tool commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS} `pkg-config --libs gtkmm-3.0` -lmysqlcppconn" id="cdt.managedbuild.tool.gnu.cpp.linker.base.900310843" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
                                 								
-                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.link.option.libs.211210724" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false" valueType="libs">
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="freetype"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="gtkmm-3.0"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="atkmm-1.6"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="gdkmm-3.0"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="giomm-2.4"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="pangomm-1.4"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="glibmm-2.4"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="gtk-3"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="gdk-3"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="pangocairo-1.0"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="pango-1.0"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="atk-1.0"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="cairo-gobject"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="gio-2.0"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="cairomm-1.0"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="cairo"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="sigc-2.0"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="gdk_pixbuf-2.0"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="gobject-2.0"/>
-                                    									
-                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="glib-2.0"/>
-                                    								
-                                </option>
-                                								
-                                <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1634316672" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.372283892" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
                                     									
                                     <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
                                     									
@@ -127,9 +75,9 @@
                                 							
                             </tool>
                             							
-                            <tool id="cdt.managedbuild.tool.gnu.assembler.exe.release.196423015" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.release">
+                            <tool id="cdt.managedbuild.tool.gnu.assembler.base.200746886" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
                                 								
-                                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.520982286" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+                                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.897210243" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
                                 							
                             </tool>
                             						
@@ -160,6 +108,136 @@
             <storageModule adwaita-icon-theme="false" applewmproto="false" atk="false" atk-bridge-2.0="false" atkmm-1.6="false" atspi-2="false" bash-completion="false" bigreqsproto="false" cairo="false" cairo-fc="false" cairo-ft="false" cairo-gobject="false" cairo-pdf="false" cairo-png="false" cairo-ps="false" cairo-script="false" cairo-svg="false" cairo-tee="false" cairo-xcb="false" cairo-xcb-shm="false" cairo-xlib="false" cairo-xlib-xrender="false" cairomm-1.0="false" cairomm-ft-1.0="false" cairomm-pdf-1.0="false" cairomm-png-1.0="false" cairomm-ps-1.0="false" cairomm-svg-1.0="false" cairomm-xlib-1.0="false" cairomm-xlib-xrender-1.0="false" compositeproto="false" damageproto="false" dbus-1="false" dmxproto="false" dri="false" dri2proto="false" dri3proto="false" egl="false" epoxy="false" expat="false" fixesproto="false" fontconfig="false" fontsproto="false" fontutil="false" form="false" freetype2="false" gdk-2.0="false" gdk-3.0="false" gdk-broadway-3.0="false" gdk-pixbuf-2.0="false" gdk-pixbuf-xlib-2.0="false" gdk-wayland-3.0="false" gdk-x11-2.0="false" gdk-x11-3.0="false" gdkmm-3.0="false" geoclue-2.0="false" gio-2.0="false" gio-unix-2.0="false" giomm-2.4="false" gl="false" glib-2.0="false" glibmm-2.4="false" glproto="false" gmodule-2.0="false" gmodule-export-2.0="false" gmodule-no-export-2.0="false" gnome-icon-theme="false" gnome-icon-theme-symbolic="false" gobject-2.0="false" graphite2="false" gstreamer-1.0="false" gstreamer-allocators-1.0="false" gstreamer-app-1.0="false" gstreamer-audio-1.0="false" gstreamer-base-1.0="false" gstreamer-check-1.0="false" gstreamer-controller-1.0="false" gstreamer-fft-1.0="false" gstreamer-gl-1.0="false" gstreamer-net-1.0="false" gstreamer-pbutils-1.0="false" gstreamer-plugins-base-1.0="false" gstreamer-riff-1.0="false" gstreamer-rtp-1.0="false" gstreamer-rtsp-1.0="false" gstreamer-sdp-1.0="false" gstreamer-tag-1.0="false" gstreamer-video-1.0="false" gstreamermm-1.0="false" gthread-2.0="false" gtk-engines-2="false" gtkmm-3.0="true" gtkplus-2.0="false" gtkplus-3.0="false" gtkplus-broadway-3.0="false" gtkplus-unix-print-2.0="false" gtkplus-unix-print-3.0="false" gtkplus-wayland-3.0="false" gtkplus-x11-2.0="false" gtkplus-x11-3.0="false" harfbuzz="false" harfbuzz-gobject="false" harfbuzz-icu="false" ice="false" icu-i18n="false" icu-io="false" icu-le="false" icu-le-hb="false" icu-lx="false" icu-uc="false" inputproto="false" iso-codes="false" kbproto="false" libdrm="false" libdrm_amdgpu="false" libdrm_intel="false" libdrm_nouveau="false" libdrm_radeon="false" libgdiplus="false" libglvnd="false" libpcre="false" libpcre16="false" libpcre32="false" libpcrecpp="false" libpcreposix="false" libpng="false" libpng16="false" libxml-2.0="false" libxmlplusplus-2.6="false" menu="false" mobile-broadband-provider-info="false" moduleId="packages" ncurses="false" ncursesplusplus="false" nemo-python="false" orc-0.4="false" panel="false" pango="false" pangocairo="false" pangoft2="false" pangomm-1.4="false" pangoxft="false" pixman-1="false" pm-utils="false" poppler-data="false" presentproto="false" pthread-stubs="false" randrproto="false" recordproto="false" reiserfscore="false" renderproto="false" resourceproto="false" scrnsaverproto="false" shared-mime-info="false" sigcplusplus-2.0="false" sm="false" systemd="false" tic="false" tinfo="false" tomboy-addins="false" udev="false" usbutils="false" videoproto="false" wayland-client="false" wayland-cursor="false" wayland-egl="false" wayland-protocols="false" wayland-scanner="false" wayland-server="false" windowswmproto="false" x11="false" x11-xcb="false" xau="false" xbitmaps="false" xcb="false" xcb-dri2="false" xcb-dri3="false" xcb-glx="false" xcb-present="false" xcb-randr="false" xcb-render="false" xcb-shape="false" xcb-shm="false" xcb-sync="false" xcb-xfixes="false" xcmiscproto="false" xcomposite="false" xcursor="false" xdamage="false" xdmcp="false" xext="false" xextproto="false" xf86bigfontproto="false" xf86dgaproto="false" xf86driproto="false" xf86vidmodeproto="false" xfixes="false" xft="false" xi="false" xinerama="false" xineramaproto="false" xkbcommon="false" xkbcomp="false" xkeyboard-config="false" xorg-sgml-doctools="false" xorg-wacom="false" xproto="false" xrandr="false" xrender="false" xshmfence="false" xtrans="false" xtst="false" xxf86vm="false" yelp-xsl="false" zlib="false"/>
             		
         </cconfiguration>
+        		
+        <cconfiguration id="cdt.managedbuild.config.gnu.exe.release.1812027959.918524032">
+            			
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.exe.release.1812027959.918524032" moduleId="org.eclipse.cdt.core.settings" name="ARM">
+                				
+                <externalSettings/>
+                				
+                <extensions>
+                    					
+                    <extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    				
+                </extensions>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                				
+                <configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser" id="cdt.managedbuild.config.gnu.exe.release.1812027959.918524032" name="ARM" optionalBuildProperties="org.eclipse.cdt.docker.launcher.containerbuild.property.enablement=null,org.eclipse.cdt.docker.launcher.containerbuild.property.selectedvolumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.volumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.image=null,org.eclipse.cdt.docker.launcher.containerbuild.property.connection=null" parent="cdt.managedbuild.config.gnu.exe.release">
+                    					
+                    <folderInfo id="cdt.managedbuild.config.gnu.exe.release.1812027959.918524032." name="/" resourcePath="">
+                        						
+                        <toolChain id="cdt.managedbuild.toolchain.gnu.cross.base.706354268" name="Cross GCC" superClass="cdt.managedbuild.toolchain.gnu.cross.base">
+                            							
+                            <option id="cdt.managedbuild.option.gnu.cross.prefix.1080622619" name="Prefix" superClass="cdt.managedbuild.option.gnu.cross.prefix" useByScannerDiscovery="false" value="" valueType="string"/>
+                            							
+                            <option id="cdt.managedbuild.option.gnu.cross.path.1511938165" name="Path" superClass="cdt.managedbuild.option.gnu.cross.path" useByScannerDiscovery="false"/>
+                            							
+                            <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.1722441125" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
+                            							
+                            <builder buildPath="${workspace_loc:/shopping-cart}/Release" id="cdt.managedbuild.builder.gnu.cross.376775783" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.builder.gnu.cross"/>
+                            							
+                            <tool commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS} `pkg-config --cflags gtkmm-3.0`" id="cdt.managedbuild.tool.gnu.cross.c.compiler.555668207" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler">
+                                								
+                                <option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.option.optimization.level.246700664" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+                                								
+                                <option defaultValue="gnu.c.debugging.level.none" id="gnu.c.compiler.option.debugging.level.2131144575" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+                                								
+                                <option id="gnu.c.compiler.option.dialect.std.113928356" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
+                                								
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="gnu.c.compiler.option.include.paths.177424477" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath"/>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.181523492" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool command="arm-linux-gnueabihf-g++" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS} -pthread -I/usr-rpi/include/gtkmm-3.0 -I/usr-rpi/lib/arm-linux-gnueabihf/gtkmm-3.0/include -I/usr-rpi/include/atkmm-1.6 -I/usr-rpi/include/gtk-3.0/unix-print -I/usr-rpi/include/gdkmm-3.0 -I/usr-rpi/lib/arm-linux-gnueabihf/gdkmm-3.0/include -I/usr-rpi/include/giomm-2.4 -I/usr-rpi/lib/arm-linux-gnueabihf/giomm-2.4/include -I/usr-rpi/include/pangomm-1.4 -I/usr-rpi/lib/arm-linux-gnueabihf/pangomm-1.4/include -I/usr-rpi/include/glibmm-2.4 -I/usr-rpi/lib/arm-linux-gnueabihf/glibmm-2.4/include -I/usr-rpi/include/gtk-3.0 -I/usr-rpi/include/at-spi2-atk/2.0 -I/usr-rpi/include/at-spi-2.0 -I/usr-rpi/include/dbus-1.0 -I/usr-rpi/lib/arm-linux-gnueabihf/dbus-1.0/include -I/usr-rpi/include/gtk-3.0 -I/usr-rpi/include/gio-unix-2.0 -I/usr-rpi/include/cairo -I/usr-rpi/include/libdrm -I/usr-rpi/include/pango-1.0 -I/usr-rpi/include/harfbuzz -I/usr-rpi/include/pango-1.0 -I/usr-rpi/include/fribidi -I/usr-rpi/include/atk-1.0 -I/usr-rpi/include/cairo -I/usr-rpi/include/cairomm-1.0 -I/usr-rpi/lib/arm-linux-gnueabihf/cairomm-1.0/include -I/usr-rpi/include/cairo -I/usr-rpi/include/pixman-1 -I/usr-rpi/include/freetype2 -I/usr-rpi/include/libpng16 -I/usr-rpi/include/sigc++-2.0 -I/usr-rpi/lib/arm-linux-gnueabihf/sigc++-2.0/include -I/usr-rpi/include/gdk-pixbuf-2.0 -I/usr-rpi/include/libmount -I/usr-rpi/include/blkid -I/usr-rpi/include/uuid -I/usr-rpi/include/glib-2.0 -I/usr-rpi/lib/arm-linux-gnueabihf/glib-2.0/include" id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.1512657485" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler">
+                                								
+                                <option id="gnu.cpp.compiler.option.optimization.level.636021773" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+                                								
+                                <option defaultValue="gnu.cpp.compiler.debugging.level.none" id="gnu.cpp.compiler.option.debugging.level.1344308131" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+                                								
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.1399119901" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="/usr-rpi/include/"/>
+                                    								
+                                </option>
+                                								
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="gnu.cpp.compiler.option.include.files.253410501" name="Include files (-include)" superClass="gnu.cpp.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles"/>
+                                								
+                                <option id="gnu.cpp.compiler.option.dialect.std.1641600455" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1058427975" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="cdt.managedbuild.tool.gnu.cross.c.linker.744455789" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker"/>
+                            							
+                            <tool command="arm-linux-gnueabihf-g++" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS} -L/usr-rpi/lib/ -lgtkmm-3.0 -latkmm-1.6 -lgdkmm-3.0 -lgiomm-2.4 -lpangomm-1.4 -lglibmm-2.4 -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -latk-1.0 -lcairo-gobject -lgio-2.0 -lcairomm-1.0 -lcairo -lsigc-2.0 -lgdk_pixbuf-2.0 -lgobject-2.0 -lglib-2.0" id="cdt.managedbuild.tool.gnu.cross.cpp.linker.1609380136" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker">
+                                								
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="gnu.cpp.link.option.libs.1247639338" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false" valueType="libs"/>
+                                								
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="gnu.cpp.link.option.paths.1852462111" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" useByScannerDiscovery="false" valueType="libPaths"/>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1957807491" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+                                    									
+                                    <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                                    									
+                                    <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                                    								
+                                </inputType>
+                                							
+                            </tool>
+                            							
+                            <tool id="cdt.managedbuild.tool.gnu.cross.archiver.2181219" name="Cross GCC Archiver" superClass="cdt.managedbuild.tool.gnu.cross.archiver"/>
+                            							
+                            <tool id="cdt.managedbuild.tool.gnu.cross.assembler.1364586567" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler">
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.1686955280" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+                                							
+                            </tool>
+                            						
+                        </toolChain>
+                        					
+                    </folderInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1812027959.918524032.1257615043" name="Database.h" rcbsApplicability="disable" resourcePath="src/Util/Database.h" toolsToInvoke=""/>
+                    					
+                    <sourceEntries>
+                        						
+                        <entry excluding="Util|Pages" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+                        						
+                        <entry excluding="Util" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/Pages"/>
+                        						
+                        <entry excluding="Database.h|Database.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/Util"/>
+                        					
+                    </sourceEntries>
+                    				
+                </configuration>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+                				
+                <externalSettings containerId="org.eclipse.cdt.managedbuilder.pkgconfig.extSettings" factoryId="org.eclipse.cdt.core.extension.container.factory"/>
+                			
+            </storageModule>
+            			
+            <storageModule adwaita-icon-theme="false" applewmproto="false" atk="false" atk-bridge-2.0="false" atkmm-1.6="false" atspi-2="false" bash-completion="false" bigreqsproto="false" cairo="false" cairo-fc="false" cairo-ft="false" cairo-gobject="false" cairo-pdf="false" cairo-png="false" cairo-ps="false" cairo-script="false" cairo-svg="false" cairo-tee="false" cairo-xcb="false" cairo-xcb-shm="false" cairo-xlib="false" cairo-xlib-xrender="false" cairomm-1.0="false" cairomm-ft-1.0="false" cairomm-pdf-1.0="false" cairomm-png-1.0="false" cairomm-ps-1.0="false" cairomm-svg-1.0="false" cairomm-xlib-1.0="false" cairomm-xlib-xrender-1.0="false" compositeproto="false" damageproto="false" dbus-1="false" dmxproto="false" dri="false" dri2proto="false" dri3proto="false" egl="false" epoxy="false" expat="false" fixesproto="false" fontconfig="false" fontsproto="false" fontutil="false" form="false" freetype2="false" gdk-2.0="false" gdk-3.0="false" gdk-broadway-3.0="false" gdk-pixbuf-2.0="false" gdk-pixbuf-xlib-2.0="false" gdk-wayland-3.0="false" gdk-x11-2.0="false" gdk-x11-3.0="false" gdkmm-3.0="false" geoclue-2.0="false" gio-2.0="false" gio-unix-2.0="false" giomm-2.4="false" gl="false" glib-2.0="false" glibmm-2.4="false" glproto="false" gmodule-2.0="false" gmodule-export-2.0="false" gmodule-no-export-2.0="false" gnome-icon-theme="false" gnome-icon-theme-symbolic="false" gobject-2.0="false" graphite2="false" gstreamer-1.0="false" gstreamer-allocators-1.0="false" gstreamer-app-1.0="false" gstreamer-audio-1.0="false" gstreamer-base-1.0="false" gstreamer-check-1.0="false" gstreamer-controller-1.0="false" gstreamer-fft-1.0="false" gstreamer-gl-1.0="false" gstreamer-net-1.0="false" gstreamer-pbutils-1.0="false" gstreamer-plugins-base-1.0="false" gstreamer-riff-1.0="false" gstreamer-rtp-1.0="false" gstreamer-rtsp-1.0="false" gstreamer-sdp-1.0="false" gstreamer-tag-1.0="false" gstreamer-video-1.0="false" gstreamermm-1.0="false" gthread-2.0="false" gtk-engines-2="false" gtkmm-3.0="true" gtkplus-2.0="false" gtkplus-3.0="false" gtkplus-broadway-3.0="false" gtkplus-unix-print-2.0="false" gtkplus-unix-print-3.0="false" gtkplus-wayland-3.0="false" gtkplus-x11-2.0="false" gtkplus-x11-3.0="false" harfbuzz="false" harfbuzz-gobject="false" harfbuzz-icu="false" ice="false" icu-i18n="false" icu-io="false" icu-le="false" icu-le-hb="false" icu-lx="false" icu-uc="false" inputproto="false" iso-codes="false" kbproto="false" libdrm="false" libdrm_amdgpu="false" libdrm_intel="false" libdrm_nouveau="false" libdrm_radeon="false" libgdiplus="false" libglvnd="false" libpcre="false" libpcre16="false" libpcre32="false" libpcrecpp="false" libpcreposix="false" libpng="false" libpng16="false" libxml-2.0="false" libxmlplusplus-2.6="false" menu="false" mobile-broadband-provider-info="false" moduleId="packages" ncurses="false" ncursesplusplus="false" nemo-python="false" orc-0.4="false" panel="false" pango="false" pangocairo="false" pangoft2="false" pangomm-1.4="false" pangoxft="false" pixman-1="false" pm-utils="false" poppler-data="false" presentproto="false" pthread-stubs="false" randrproto="false" recordproto="false" reiserfscore="false" renderproto="false" resourceproto="false" scrnsaverproto="false" shared-mime-info="false" sigcplusplus-2.0="false" sm="false" systemd="false" tic="false" tinfo="false" tomboy-addins="false" udev="false" usbutils="false" videoproto="false" wayland-client="false" wayland-cursor="false" wayland-egl="false" wayland-protocols="false" wayland-scanner="false" wayland-server="false" windowswmproto="false" x11="false" x11-xcb="false" xau="false" xbitmaps="false" xcb="false" xcb-dri2="false" xcb-dri3="false" xcb-glx="false" xcb-present="false" xcb-randr="false" xcb-render="false" xcb-shape="false" xcb-shm="false" xcb-sync="false" xcb-xfixes="false" xcmiscproto="false" xcomposite="false" xcursor="false" xdamage="false" xdmcp="false" xext="false" xextproto="false" xf86bigfontproto="false" xf86dgaproto="false" xf86driproto="false" xf86vidmodeproto="false" xfixes="false" xft="false" xi="false" xinerama="false" xineramaproto="false" xkbcommon="false" xkbcomp="false" xkeyboard-config="false" xorg-sgml-doctools="false" xorg-wacom="false" xproto="false" xrandr="false" xrender="false" xshmfence="false" xtrans="false" xtst="false" xxf86vm="false" yelp-xsl="false" zlib="false"/>
+            		
+        </cconfiguration>
         	
     </storageModule>
     	
@@ -168,6 +246,26 @@
         <project id="shopping-cart.cdt.managedbuild.target.gnu.exe.758690247" name="Executable" projectType="cdt.managedbuild.target.gnu.exe"/>
         	
     </storageModule>
+    	
+    <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+    	
+    <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+    	
+    <storageModule moduleId="refreshScope" versionNumber="2">
+        		
+        <configuration configurationName="x86"/>
+        		
+        <configuration configurationName="ARM"/>
+        		
+        <configuration configurationName="Release">
+            			
+            <resource resourceType="PROJECT" workspacePath="/shopping-cart"/>
+            		
+        </configuration>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
     	
     <storageModule moduleId="scannerConfiguration">
         		
@@ -179,28 +277,24 @@
             		
         </scannerConfigBuildInfo>
         		
+        <scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.release.1812027959;cdt.managedbuild.config.gnu.exe.release.1812027959.;cdt.managedbuild.tool.gnu.cross.c.compiler.2095552616;cdt.managedbuild.tool.gnu.c.compiler.input.66999204">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+            		
+        </scannerConfigBuildInfo>
+        		
         <scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.release.1812027959;cdt.managedbuild.config.gnu.exe.release.1812027959.;cdt.managedbuild.tool.gnu.c.compiler.exe.release.1402863673;cdt.managedbuild.tool.gnu.c.compiler.input.1683119722">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+            		
+        </scannerConfigBuildInfo>
+        		
+        <scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.release.1812027959;cdt.managedbuild.config.gnu.exe.release.1812027959.;cdt.managedbuild.tool.gnu.cross.cpp.compiler.1756418488;cdt.managedbuild.tool.gnu.cpp.compiler.input.591903882">
             			
             <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
             		
         </scannerConfigBuildInfo>
         	
     </storageModule>
-    	
-    <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
-    	
-    <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
-    	
-    <storageModule moduleId="refreshScope" versionNumber="2">
-        		
-        <configuration configurationName="Release">
-            			
-            <resource resourceType="PROJECT" workspacePath="/shopping-cart"/>
-            		
-        </configuration>
-        	
-    </storageModule>
-    	
-    <storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
     
 </cproject>
