@@ -25,6 +25,7 @@ private:
 	sql::ResultSet *res;
 public:
 	Database();
+    void connect();
 	virtual ~Database();
 };
 
