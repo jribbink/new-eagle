@@ -9,7 +9,7 @@
     <property name="can_focus">False</property>
     <property name="border_width">0</property>
     <child>
-      <object class="GtkImage">
+      <object class="GtkImage" id="bg">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="pixbuf">background.png</property>

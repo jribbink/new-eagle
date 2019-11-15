@@ -7,3 +7,7 @@
 
 #include "Globals.h"
 
+namespace Globals
+{
+    NESC::Database db;
+}

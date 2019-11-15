@@ -26,6 +26,7 @@ namespace NESC::Pages
 	class IdlePage : public NESC::Page{
 	public:
 		IdlePage();
+        void scaleBg();
 		virtual ~IdlePage();
 	private:
 		void on_button_clicked();

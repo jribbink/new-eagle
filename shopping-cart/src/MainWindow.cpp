@@ -16,7 +16,9 @@ MainWindow::MainWindow() {
 
 	//Init notebook
 	notebook = new Gtk::Notebook();
-
+    
+    std::cout << width;
+    std::cout << height;
 	//Fullscreen if small enough, otherwise disable resize
 	if(width <= screen_width && height <= screen_height)
 	{
@@ -37,6 +39,12 @@ MainWindow::MainWindow() {
 
 	//Show all MainWindow children (notebook)
 	show_all_children();
+    
+    //Scale the background image
+    idlepage->scaleBg();
+    
+    //Connect to database
+    //Globals::db.connect();
 }
 
 MainWindow::~MainWindow() {

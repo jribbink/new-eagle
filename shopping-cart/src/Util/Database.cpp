@@ -14,6 +14,10 @@ using namespace std;
 namespace NESC {
 
 Database::Database() {
+    
+}
+
+void Database::connect() {
 	try {
 	  /* Create a connection */
 	  driver = get_driver_instance();

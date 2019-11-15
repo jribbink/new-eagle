@@ -27,6 +27,18 @@ namespace NESC::Pages
 		notebook->show_all();
 		notebook->set_current_page(1);
 	}
+    
+    void IdlePage::scaleBg()
+    {
+        //Scale image
+		Gtk::Image *img;
+        Gtk::Notebook* notebook = ((MainWindow*)this->get_toplevel())->notebook;
+		builder->get_widget("bg", img);
+        Gtk::Allocation alloc = notebook->get_allocation();
+        Glib::RefPtr<Gdk::Pixbuf> pixbuf = Gdk::Pixbuf::create_from_file("background.png");
+        pixbuf->scale_simple(alloc.get_width(), alloc.get_height(), Gdk::INTERP_BILINEAR);
+        img->set(pixbuf);
+    }
 
 	IdlePage::~IdlePage() {
 		// TODO Auto-generated destructor stub
