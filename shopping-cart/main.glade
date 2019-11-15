@@ -15,20 +15,20 @@
         <property name="receives_default">True</property>
       </object>
       <packing>
-        <property name="x">409</property>
-        <property name="y">271</property>
+        <property name="x">387</property>
+        <property name="y">248</property>
       </packing>
     </child>
     <child>
       <object class="GtkListBox">
         <property name="width_request">299</property>
-        <property name="height_request">261</property>
+        <property name="height_request">418</property>
         <property name="visible">True</property>
         <property name="can_focus">False</property>
       </object>
       <packing>
-        <property name="x">40</property>
-        <property name="y">109</property>
+        <property name="x">33</property>
+        <property name="y">74</property>
       </packing>
     </child>
     <child>
@@ -43,8 +43,8 @@
         </attributes>
       </object>
       <packing>
-        <property name="x">39</property>
-        <property name="y">50</property>
+        <property name="x">35</property>
+        <property name="y">11</property>
       </packing>
     </child>
     <child>
@@ -57,8 +57,8 @@
         <property name="receives_default">True</property>
       </object>
       <packing>
-        <property name="x">412</property>
-        <property name="y">140</property>
+        <property name="x">386</property>
+        <property name="y">100</property>
       </packing>
     </child>
     <child>
@@ -71,8 +71,8 @@
         <property name="receives_default">True</property>
       </object>
       <packing>
-        <property name="x">542</property>
-        <property name="y">142</property>
+        <property name="x">547</property>
+        <property name="y">101</property>
       </packing>
     </child>
     <child>
@@ -85,8 +85,22 @@
         <property name="receives_default">True</property>
       </object>
       <packing>
-        <property name="x">540</property>
-        <property name="y">273</property>
+        <property name="x">553</property>
+        <property name="y">249</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton">
+        <property name="label" translatable="yes">Help</property>
+        <property name="width_request">289</property>
+        <property name="height_request">100</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="x">387</property>
+        <property name="y">381</property>
       </packing>
     </child>
   </object>
