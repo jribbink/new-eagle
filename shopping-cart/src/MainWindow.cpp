@@ -43,9 +43,18 @@ MainWindow::MainWindow() {
     //Scale the background image
     idlepage->scaleBg();
     
+    //Connect to keypress event
+    /*this->add_events(Gdk::EventMask::KEY_PRESS_MASK);
+    this->signal_key_press_event().connect(sigc::mem_fun(*this, &MainWindow::keyPress));*/
+    
     //Connect to database
-    //Globals::db.connect();
+    Globals::db.connect();
 }
+
+/*gboolean MainWindow::keyPress(GdkEventKey *key)
+{
+    return true;
+}*/
 
 MainWindow::~MainWindow() {
 	// TODO Auto-generated destructor stub

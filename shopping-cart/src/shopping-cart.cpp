@@ -16,12 +16,13 @@
 #include <gtkmm/window.h>
 #include <gdkmm/screen.h>
 #include <gtkmm/fixed.h>
+#include <thread>
 
 #include <iostream>
 
 int main (int argc, char *argv[])
 {
-	//Initialize gtkmm
+    //Initialize gtkmm
 	Gtk::Main kit(argc, argv);
 
 	//Setup window
@@ -29,6 +30,6 @@ int main (int argc, char *argv[])
 
 	//Main application method, show window
 	Gtk::Main::run(*win);
-
+    
 	return 0;
 }
