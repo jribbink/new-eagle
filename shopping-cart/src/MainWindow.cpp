@@ -14,11 +14,9 @@ MainWindow::MainWindow() {
 	int width = screen->get_width();
 	int height = screen->get_height();
 
-	//Init notebook
-	notebook = new Gtk::Notebook();
+	//Init container
+	Globals::container = container = new Gtk::Stack();
     
-    std::cout << width;
-    std::cout << height;
 	//Fullscreen if small enough, otherwise disable resize
 	if(width <= screen_width && height <= screen_height)
 	{
@@ -27,34 +25,37 @@ MainWindow::MainWindow() {
 	else
 	{
 	  property_resizable() = false;
-	  notebook->set_size_request(screen_width, screen_height);
+	  container->set_size_request(screen_width, screen_height);
 	}
 
-	//Add idle page to notebook
+	//Add idle page to container
 	NESC::Pages::IdlePage *idlepage = new NESC::Pages::IdlePage();
-	notebook->append_page(*idlepage, "idle");
+	container->add(*idlepage, "idle");
+    container->set_visible_child(*idlepage);
+    
+	//Add container to MainWindow Object
+	add(*container);
 
-	//Add notebook to MainWindow Object
-	add(*notebook);
-
-	//Show all MainWindow children (notebook)
+	//Show all MainWindow children (container)
 	show_all_children();
     
     //Scale the background image
     idlepage->scaleBg();
     
     //Connect to keypress event
-    /*this->add_events(Gdk::EventMask::KEY_PRESS_MASK);
-    this->signal_key_press_event().connect(sigc::mem_fun(*this, &MainWindow::keyPress));*/
+    this->add_events(Gdk::KEY_PRESS_MASK);
+    this->signal_key_press_event().connect(sigc::mem_fun(*this, &MainWindow::keyPress));
     
-    //Connect to database
-    Globals::db.connect();
+    //Connect to database DO IT IN A DIFFERENT THREAD FUCKFACE
+    //Globals::g_dbthread = new thread(sigc::mem_fun(Globals::g_db, &NESC::Database::connect));
+    //Globals::g_db.connect();
 }
 
-/*gboolean MainWindow::keyPress(GdkEventKey *key)
+gboolean MainWindow::keyPress(GdkEventKey *key)
 {
+    std::cout << key->keyval << std::endl;
     return true;
-}*/
+}
 
 MainWindow::~MainWindow() {
 	// TODO Auto-generated destructor stub

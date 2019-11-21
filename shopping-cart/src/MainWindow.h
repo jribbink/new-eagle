@@ -11,15 +11,16 @@
 #include <gtkmm/button.h>
 #include <gtkmm/window.h>
 #include <gdkmm/screen.h>
-#include <gtkmm/notebook.h>
+#include <gtkmm/stack.h>
 
 #include "Util/Globals.h"
 #include "Pages/IdlePage.h"
 
 class MainWindow : public Gtk::Window {
 public:
-	Gtk::Notebook* notebook;
+	Gtk::Stack* container;
 	MainWindow();
+    gboolean keyPress(GdkEventKey *key);
 	virtual ~MainWindow();
 };
 

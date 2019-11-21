@@ -7,7 +7,11 @@
 
 #include "Globals.h"
 
+using namespace std;
+
 namespace Globals
 {
-    NESC::Database db;
+    NESC::Database g_db;
+    thread *g_dbthread;
+    Gtk::Stack* container;
 }

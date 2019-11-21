@@ -18,12 +18,18 @@ Database::Database() {
 }
 
 void Database::connect() {
+    cout << "hey gayy" << endl;
+    
 	try {
 	  /* Create a connection */
 	  driver = get_driver_instance();
+      cout <<"e" <<endl;
 	  con = driver->connect("tcp://neweaglepos.com:3306", "neweagle", "neweagle");
+      cout <<"e" <<endl;
 	  /* Connect to the MySQL test database */
 	  con->setSchema("neweagle_db");
+      
+      cout <<"e" <<endl;
 
 	  stmt = con->createStatement();
 	  res = stmt->executeQuery("SELECT 'Hello World!' AS _message");
