@@ -22,7 +22,8 @@
       </packing>
     </child>
     <child>
-      <object class="GtkListBox">
+      <object class="GtkListBox" id="listbox">
+        <property name="name">listbox</property>
         <property name="width_request">299</property>
         <property name="height_request">360</property>
         <property name="visible">True</property>
