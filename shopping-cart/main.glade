@@ -22,19 +22,6 @@
       </packing>
     </child>
     <child>
-      <object class="GtkListBox" id="listbox">
-        <property name="name">listbox</property>
-        <property name="width_request">299</property>
-        <property name="height_request">360</property>
-        <property name="visible">True</property>
-        <property name="can_focus">False</property>
-      </object>
-      <packing>
-        <property name="x">26</property>
-        <property name="y">77</property>
-      </packing>
-    </child>
-    <child>
       <object class="GtkLabel">
         <property name="width_request">130</property>
         <property name="height_request">80</property>
@@ -103,6 +90,21 @@
       <packing>
         <property name="x">445</property>
         <property name="y">329</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkTreeView" id="ItemView">
+        <property name="width_request">299</property>
+        <property name="height_request">360</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <child internal-child="selection">
+          <object class="GtkTreeSelection"/>
+        </child>
+      </object>
+      <packing>
+        <property name="x">25</property>
+        <property name="y">76</property>
       </packing>
     </child>
   </object>

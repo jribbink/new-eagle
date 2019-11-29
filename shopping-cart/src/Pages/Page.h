@@ -12,6 +12,7 @@
 #include <gtkmm/builder.h>
 #include <gtkmm/bin.h>
 #include <gtkmm/fixed.h>
+#include <gtkmm/listbox.h>
 
 #include <glibmm/ustring.h>
 

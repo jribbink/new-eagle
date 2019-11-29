@@ -15,14 +15,10 @@
 #include <gtkmm/stack.h>
 #include <thread>
 
-#include "Database.h"
-
 using namespace std;
 
 namespace Globals
-{
-    extern NESC::Database g_db;
-    extern thread *g_dbthread;
+{    extern thread *g_dbthread;
     extern Gtk::Stack* container;
 }
 #endif /* GLOBALS_H_ */

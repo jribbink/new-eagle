@@ -14,7 +14,7 @@ namespace NESC::Pages {
 
 class PaymentPage : public NESC::Page {
 public:
-	PaymentPage();
+	PaymentPage(double total);
 	virtual ~PaymentPage();
 };
 

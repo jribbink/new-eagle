@@ -20,7 +20,6 @@ class MainWindow : public Gtk::Window {
 public:
 	Gtk::Stack* container;
 	MainWindow();
-    gboolean keyPress(GdkEventKey *key);
 	virtual ~MainWindow();
 };
 

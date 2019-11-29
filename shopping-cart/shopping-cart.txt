@@ -1,1 +1,1 @@
-./Debug/src_Util_Globals.cpp.o ./Debug/src_Pages_MainPage.cpp.o ./Debug/src_shopping-cart.cpp.o ./Debug/src_Util_Database.cpp.o ./Debug/src_Pages_PaymentPage.cpp.o ./Debug/src_MainWindow.cpp.o ./Debug/src_Pages_IdlePage.cpp.o ./Debug/src_Pages_Page.cpp.o
+./Debug/src_Util_Globals.cpp.o ./Debug/src_Pages_MainPage.cpp.o ./Debug/src_shopping-cart.cpp.o ./Debug/src_Pages_PaymentPage.cpp.o ./Debug/src_MainWindow.cpp.o ./Debug/src_Pages_IdlePage.cpp.o ./Debug/src_Pages_Page.cpp.o

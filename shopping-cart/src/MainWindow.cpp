@@ -42,19 +42,13 @@ MainWindow::MainWindow() {
     //Scale the background image
     idlepage->scaleBg();
     
-    //Connect to keypress event
-    this->add_events(Gdk::KEY_PRESS_MASK);
-    this->signal_key_press_event().connect(sigc::mem_fun(*this, &MainWindow::keyPress));
+    this->realize();
+    this->get_window()->set_cursor(Gdk::Cursor::create(Gdk::BLANK_CURSOR));
+    
     
     //Connect to database DO IT IN A DIFFERENT THREAD FUCKFACE
     //Globals::g_dbthread = new thread(sigc::mem_fun(Globals::g_db, &NESC::Database::connect));
     //Globals::g_db.connect();
-}
-
-gboolean MainWindow::keyPress(GdkEventKey *key)
-{
-    std::cout << key->keyval << std::endl;
-    return true;
 }
 
 MainWindow::~MainWindow() {

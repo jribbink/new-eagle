@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=
-Date                   :=11/21/19
+Date                   :=11/29/19
 CodeLitePath           :=/home/pi/.codelite
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -35,7 +35,7 @@ PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="shopping-cart.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=mkdir -p
-LinkOptions            :=  $(shell pkg-config --libs gtkmm-3.0) -lmysqlcppconn -pthread
+LinkOptions            :=  $(shell pkg-config --libs gtkmm-3.0) -lcurl -pthread
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
 RcIncludePath          := 
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/src_Util_Globals.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_Pages_MainPage.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_shopping-cart.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_Util_Database.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_Pages_PaymentPage.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_MainWindow.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_Pages_IdlePage.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_Pages_Page.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/src_Util_Globals.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_Pages_MainPage.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_shopping-cart.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_Pages_PaymentPage.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_MainWindow.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_Pages_IdlePage.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_Pages_Page.cpp$(ObjectSuffix) 
 
 
 
@@ -114,14 +114,6 @@ $(IntermediateDirectory)/src_shopping-cart.cpp$(DependSuffix): src/shopping-cart
 
 $(IntermediateDirectory)/src_shopping-cart.cpp$(PreprocessSuffix): src/shopping-cart.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_shopping-cart.cpp$(PreprocessSuffix) src/shopping-cart.cpp
-
-$(IntermediateDirectory)/src_Util_Database.cpp$(ObjectSuffix): src/Util/Database.cpp $(IntermediateDirectory)/src_Util_Database.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/pi/new-eagle/shopping-cart/src/Util/Database.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_Util_Database.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/src_Util_Database.cpp$(DependSuffix): src/Util/Database.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/src_Util_Database.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/src_Util_Database.cpp$(DependSuffix) -MM src/Util/Database.cpp
-
-$(IntermediateDirectory)/src_Util_Database.cpp$(PreprocessSuffix): src/Util/Database.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_Util_Database.cpp$(PreprocessSuffix) src/Util/Database.cpp
 
 $(IntermediateDirectory)/src_Pages_PaymentPage.cpp$(ObjectSuffix): src/Pages/PaymentPage.cpp $(IntermediateDirectory)/src_Pages_PaymentPage.cpp$(DependSuffix)
 	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/pi/new-eagle/shopping-cart/src/Pages/PaymentPage.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_Pages_PaymentPage.cpp$(ObjectSuffix) $(IncludePath)

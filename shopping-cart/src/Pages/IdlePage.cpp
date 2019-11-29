@@ -23,7 +23,7 @@ namespace NESC::Pages
 	{
 		MainPage* main = new MainPage();
 		Globals::container->add(*main, "main");
-		Globals::container->show_all();
+		main->show();
 		Globals::container->set_visible_child(*main);
 	}
     

@@ -23,6 +23,7 @@ namespace NESC
 
 		Gtk::Fixed *fixed;
 		builder->get_widget(glade, fixed);
+
 		add(*fixed);
 	}
 
