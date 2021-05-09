@@ -46,7 +46,7 @@ MainWindow::MainWindow() {
     this->get_window()->set_cursor(Gdk::Cursor::create(Gdk::BLANK_CURSOR));
     
     
-    //Connect to database DO IT IN A DIFFERENT THREAD FUCKFACE
+    //Connect to database
     //Globals::g_dbthread = new thread(sigc::mem_fun(Globals::g_db, &NESC::Database::connect));
     //Globals::g_db.connect();
 }
